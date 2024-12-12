@@ -42,6 +42,7 @@ button{
     font-size: 3rem;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 0.0001px 0.2px 2px 2px #3FFF1B;
 }
 
 button:hover{
@@ -53,13 +54,13 @@ button:active{
 }
 
 .operator-btn{
-    background-color: orange;
+    
 }
 
 .operator-btn:hover{
-    background-color: rgba(255, 166, 0, 0.568);
+    
 }
 
 .operator-btn:active{
-    background-color: rgba(255, 166, 0, 0.096);
+   
 }
