@@ -10,15 +10,15 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(37, 33, 33);
     border-radius: 15px;
-    max-width: 500px;
+    max-width: 300px;
     overflow: hidden;
-    max-height: 500px;
+    max-height: 400px;
 }
 
 #display{
     width: 100%;
-    padding: 20px;
-    font-size: 5rem;
+    padding: 15px;
+    font-size: 3rem;
     text-align: left;
     border: none;
     background-color:rgba(159, 154, 154, 0.391) ;
@@ -27,8 +27,9 @@ body{
 
 #keys{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 50px 50px 50px 50px;
     gap:10px;
+    column-gap: 10px;
     padding: 25px;
 }
 
@@ -39,7 +40,7 @@ button{
     border: none;
     background-color: black;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0.0001px 0.2px 2px 2px #3FFF1B;
@@ -47,6 +48,8 @@ button{
 
 button:hover{
     background-color: rgba(0, 0, 0, 0.242);
+    box-shadow:0.0001px 0.2px 2px 2px #3FFF1B;
+     ;
 }
 
 button:active{
@@ -54,6 +57,7 @@ button:active{
 }
 
 .operator-btn{
+    color: #3FFF1B;
     
 }
 
