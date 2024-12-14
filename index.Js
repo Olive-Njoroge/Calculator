@@ -1,9 +1,9 @@
 const display = document.querySelector("#display");
-const pi = Math.PI.toFixed(3);
 function appendToDisplay(input){
 
     if(input === 'π'){
-        display.value += pi;
+        
+        display.value += 'π';
     }else if(input === '√'){
          if (display.value !== "") {
             display.value = Math.sqrt(parseFloat(display.value)).toFixed(3); // Square root with 3 decimal places
@@ -29,7 +29,8 @@ function clearDisplay(){
 
 function calculate(){
     try{
-    display.value = eval(display.value).toFixed(2);
+    const valueWithPi = display.value.replace("π", Math.PI);
+    display.value = eval(valueWithPi).toFixed(2);
     }
     catch(error){
         display.value = "error";
